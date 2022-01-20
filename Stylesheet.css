@@ -1,20 +1,5 @@
-.bigBox {
-  height: 500px;
-  background-color: darkblue;
-}
-
 *p1 {
   font-weight: bold;
-}
-
-.flex-box {
-  display: grid;
-  grid-template-columns: auto auto 50%;
-}
-
-.newLine {
-  grid-column-start: 1;
-  grid-column-end: 4;
 }
 
 table tr:nth-of-type(odd) td {
