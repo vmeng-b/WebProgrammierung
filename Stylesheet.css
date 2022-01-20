@@ -1,0 +1,53 @@
+.bigBox {
+  height: 500px;
+  background-color: darkblue;
+}
+
+*p1 {
+  font-weight: bold;
+}
+
+.flex-box {
+  display: grid;
+  grid-template-columns: auto auto 50%;
+}
+
+.newLine {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+table tr:nth-of-type(odd) td {
+  background-color: #F5E7CC;
+}
+table {
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: darkblue;
+  margin: 20px 10px;
+  color: white;
+  padding: 5px;
+}
+
+th {
+  font-style: italic;
+}
+
+.wichtig {
+  color: red;
+  font-weight: 950;
+}
+
+.medium {
+  color: orange;
+  font-weight: 500;
+}
+
+.unwichtig {
+  color: grey;
+  font-weight: 100;
+}
