@@ -51,20 +51,20 @@ th {
   grid-template:
     "h h" 80px
     "c s" auto
-    "f f" 50px
+    "f f" auto
     / 3fr 1fr;
   grid-gap: 5px;
   min-height: calc(100vh - 20px);
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:680px) {
   .site {
     display: grid;
     grid-template:
       "h" 80px
       "c" auto
       "s" auto
-      "f" 50px
+      "f" auto
       / 1fr;
     grid-gap: 5px;
     min-height: calc(100vh - 20px);
@@ -88,14 +88,44 @@ th {
 .footer {
   grid-area: f;
   background-color: darkgrey;
+  max-height: 85px;
+  min-height: 30px;
+  height: auto;
 }
 
 .flex {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .sMarginRL {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.headerMargin {
+  margin-left: 50px;
+  margin-right: 50px;
+  align-self: center;
+}
+
+.whiteLink {
+  color: white;
+}
+
+.twentyFont {
+  font-size: 20px;
+}
+
+.workInProgress {
+  width: calc(100vw - 15px);
 }
