@@ -45,3 +45,57 @@ th {
     width: 500px;
     height: 300px;
 }
+
+.site {
+  display: grid;
+  grid-template:
+    "h h" 80px
+    "c s" auto
+    "f f" 50px
+    / 3fr 1fr;
+  grid-gap: 5px;
+  min-height: calc(100vh - 20px);
+}
+
+@media screen and (max-width:480px) {
+  .site {
+    display: grid;
+    grid-template:
+      "h" 80px
+      "c" auto
+      "s" auto
+      "f" 50px
+      / 1fr;
+    grid-gap: 5px;
+    min-height: calc(100vh - 20px);
+  }
+}
+
+.header {
+  grid-area: h;
+  background-color: darkgrey;
+}
+
+.content {
+  grid-area: c;
+}
+
+.sidebar {
+  grid-area: s;
+  background-color: darkblue;
+}
+
+.footer {
+  grid-area: f;
+  background-color: darkgrey;
+}
+
+.flex {
+  display: flex;
+  justify-content: center
+}
+
+.sMarginRL {
+  margin-left: 5px;
+  margin-right: 5px;
+}
